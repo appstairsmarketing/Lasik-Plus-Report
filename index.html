@@ -1,0 +1,285 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lasik Plus — Jul to Oct 2026 Performance Comparison</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--bg-soft:#f7f7f7;--bg-row:#f2f2f2;--bg-row-alt:#fafafa;--ink:#1a1a1a;--ink-soft:#3d3d3d;--ink-muted:#6b6b6b;--rule:#e4e4e4;--black:#000;
+--highlight:#fff59d;--hl-soft:#fffbd6;--ig:#E1306C;--fb:#1877F2;--tt:#000;--sc:#FFFC00;--ga:#4285F4;--good:#2e7d32;--warn:#b45309;--bad:#b91c1c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--bg);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.page{max-width:1100px;margin:0 auto;padding:0 32px}
+.cover{min-height:480px;display:flex;flex-direction:column;justify-content:center;align-items:center;border-bottom:1px solid var(--rule);padding:80px 32px 60px;text-align:center;background:linear-gradient(180deg,#fafafa 0%,#fff 100%)}
+.cover .brand{font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:24px;font-weight:500}
+.cover h1{font-size:64px;font-weight:800;letter-spacing:-.02em;line-height:1.05;margin-bottom:16px;color:var(--black)}
+.cover .sub{font-size:20px;color:var(--ink-soft);margin-bottom:36px}
+.cover .period{display:inline-block;padding:10px 24px;border:1px solid var(--ink);font-weight:600;font-size:14px;letter-spacing:.05em}
+.cover .agency{margin-top:48px;font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--ink-muted)}
+.platforms{display:flex;justify-content:center;gap:12px;margin-top:24px;flex-wrap:wrap}
+.platform-chip{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:999px;background:#f0f0f0;font-size:12px;font-weight:600;color:var(--ink-soft)}
+.platform-chip .dot{width:8px;height:8px;border-radius:50%}
+.spend-chips{justify-content:flex-start;margin:8px 0 8px}
+.spend-chips .platform-chip{font-size:13px;padding:8px 16px}
+.section{padding:56px 0 16px}
+.section-divider{background:var(--bg-soft);padding:70px 32px;margin:56px -32px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.section-divider .eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-muted);font-weight:600;margin-bottom:12px}
+.section-divider h2{font-size:56px;font-weight:300;letter-spacing:-.02em;line-height:1;color:var(--black)}
+.section-divider h2 strong{font-weight:800}
+h2.heading{position:relative;font-size:32px;font-weight:700;letter-spacing:-.01em;padding-left:18px;margin-bottom:24px}
+h2.heading::before{content:'';position:absolute;left:0;top:6px;bottom:6px;width:6px;background:var(--ink)}
+h3.subheading{position:relative;font-size:20px;font-weight:700;padding-left:14px;margin:30px 0 14px}
+h3.subheading::before{content:'';position:absolute;left:0;top:4px;bottom:4px;width:4px;background:var(--ink)}
+h3.subheading .accent{font-weight:400;color:var(--ink-muted)}
+p{margin-bottom:12px;color:var(--ink-soft)}
+ul.bullets{list-style:none;margin:12px 0}
+ul.bullets li{position:relative;padding-left:22px;margin-bottom:10px;color:var(--ink-soft)}
+ul.bullets li::before{content:'•';position:absolute;left:6px;color:var(--ink);font-weight:700;font-size:16px}
+ul.bullets li strong{color:var(--ink)}
+.note{font-size:13px;color:var(--ink-muted);font-style:italic}
+.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--ink);margin:24px 0}
+.kpi{padding:22px 24px;border-right:1px solid var(--rule);background:#fff}
+.kpi:last-child{border-right:none}
+.kpi .label{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-muted);font-weight:600;margin-bottom:8px}
+.kpi .value{font-size:32px;font-weight:800;line-height:1.1;letter-spacing:-.02em}
+.kpi .value .unit{font-size:14px;font-weight:600;color:var(--ink-muted);margin-left:4px}
+.kpi .change{display:inline-block;margin-top:6px;font-size:12px;font-weight:600}
+.kpi .change.up{color:var(--good)}.kpi .change.down{color:var(--bad)}.kpi .change.flat{color:var(--ink-muted)}
+.tw{overflow-x:auto}
+table.data{width:100%;border-collapse:collapse;margin:12px 0 18px;font-size:14px}
+table.data thead tr{background:var(--black);color:#fff}
+table.data thead th{padding:12px 14px;text-align:center;font-weight:700;font-size:13px;letter-spacing:.02em;border:1px solid #222}
+table.data thead th:first-child{text-align:left}
+table.data tbody td{padding:11px 14px;text-align:center;color:var(--ink-soft);border-bottom:1px solid var(--rule)}
+table.data tbody td:first-child{text-align:left;font-weight:700;color:var(--ink);background:var(--bg-row-alt)}
+table.data tbody tr:nth-child(odd) td:not(:first-child){background:var(--bg-row)}
+table.data tbody tr:nth-child(even) td:not(:first-child){background:#fff}
+table.data tbody td.yc{background:var(--hl-soft) !important;font-weight:700;color:var(--black)}
+table.data tbody tr.total td{background:var(--ink) !important;color:#fff;font-weight:700;border-bottom:none}
+table.data .yh{background:var(--highlight) !important;color:var(--black) !important}
+table.data .num{font-variant-numeric:tabular-nums}
+table.data .note{font-weight:400}
+tr.total .note{color:#ccc}
+.channel-card{border:1px solid var(--rule);margin:28px 0;overflow:hidden}
+.channel-header{padding:16px 24px;display:flex;align-items:center;gap:14px;color:#fff;font-weight:700;font-size:18px}
+.channel-header .icon-box{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:8px;font-weight:800;font-size:16px;background:#fff}
+.channel-header.meta{background:linear-gradient(90deg,#1877F2 0%,#833AB4 55%,#E1306C 100%)}
+.channel-header.ga{background:linear-gradient(90deg,#4285F4 0%,#34A853 35%,#FBBC04 65%,#EA4335 100%)}
+.channel-header.tt{background:var(--tt)}
+.channel-header.sc{background:var(--sc);color:var(--black)}
+.channel-header.crm{background:var(--ink)}
+.channel-body{padding:24px}
+.quickstat-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-bottom:20px;border-top:1px solid var(--rule);border-left:1px solid var(--rule)}
+.quickstat{padding:14px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.quickstat .lbl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-muted);font-weight:600;margin-bottom:6px}
+.quickstat .val{font-size:22px;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums}
+.quickstat .sub-lbl{font-size:11px;color:var(--ink-muted);margin-top:4px}
+.quickstat .sub-lbl.down{color:var(--bad);font-weight:600}.quickstat .sub-lbl.up{color:var(--good);font-weight:600}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin:24px 0}
+.insight-box{background:var(--bg-soft);padding:18px 22px;margin:14px 0;border-left:6px solid var(--ink)}
+.insight-box.good{border-left-color:var(--good)}.insight-box.warn{border-left-color:var(--warn)}.insight-box.bad{border-left-color:var(--bad)}
+.insight-box .ib-label{font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;margin-bottom:8px}
+.insight-box.good .ib-label{color:var(--good)}.insight-box.warn .ib-label{color:var(--warn)}.insight-box.bad .ib-label{color:var(--bad)}
+.insight-box p{margin:0;line-height:1.55}.insight-box p+p{margin-top:8px}
+.adlink{color:inherit;font-weight:700;text-decoration:underline;text-underline-offset:3px}.adlink:hover{color:var(--fb)}
+.highlight-stat{display:inline-block;background:var(--highlight);padding:1px 8px;font-weight:700;color:var(--black)}
+.badge{display:inline-block;padding:3px 10px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+.badge.paused{background:#fde2e2;color:var(--bad)}.badge.active{background:#dcfce7;color:var(--good)}.badge.brand{background:#f0f0f0;color:var(--ink-soft)}
+.badge.new{background:#fff;color:var(--black)}
+.driver{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.driver .n{font-size:30px;font-weight:800;background:var(--highlight);text-align:center;height:52px;line-height:52px}
+.driver h4{font-size:17px;margin-bottom:4px}
+.doc-footer{margin-top:80px;padding:40px 32px;background:var(--ink);color:#fff;text-align:center}
+.doc-footer .by{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:8px}
+.doc-footer .agency-mark{font-size:24px;font-weight:800;letter-spacing:-.02em}
+.doc-footer .meta{font-size:12px;color:rgba(255,255,255,.6);margin-top:12px}
+@media print{.section-divider{page-break-before:always}.channel-card{page-break-inside:avoid}body{font-size:12px}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+@media (max-width:800px){.cover h1{font-size:40px}.kpi-grid,.two-col{grid-template-columns:1fr}.kpi{border-right:none;border-bottom:1px solid var(--rule)}.quickstat-grid{grid-template-columns:repeat(2,1fr)}.section-divider h2{font-size:40px}}
+</style></head><body>
+
+<section class="cover">
+  <div class="brand">Lasik Plus × APPSTAIRS</div>
+  <h1>Performance Comparison</h1>
+  <div class="sub">July to October 2026</div>
+  <div class="period">01 / 07 / 2026 — 29 / 10 / 2026</div>
+  <div class="platforms">
+    <span class="platform-chip"><span class="dot" style="background:#E1306C"></span>Instagram</span>
+    <span class="platform-chip"><span class="dot" style="background:#1877F2"></span>Facebook</span>
+    <span class="platform-chip"><span class="dot" style="background:#4285F4"></span>Google Ads</span>
+    <span class="platform-chip"><span class="dot" style="background:#FFFC00;border:1px solid #ccc"></span>Snapchat</span>
+    <span class="platform-chip"><span class="dot" style="background:#000"></span>TikTok</span>
+  </div>
+  <div class="agency">Prepared by APPSTAIRS · October 2026</div>
+</section>
+
+<div class="page">
+<section class="section" id="snapshot">
+  <h2 class="heading">Executive Snapshot</h2>
+  <p>Results did drop in October: paid results are pacing about <strong>17% below September</strong>, part of which is Google tracking. October is the steepest step in a gradual decline since July, when paid results peaked; October is pacing about 31% below July. Total ad spend stayed close to September, so the drop does not come from a smaller budget overall. It comes from <strong>LASIK</strong>: its Facebook budget was reduced after the clinic reported few bookings from Facebook leads, and its cost per message rose as the main LASIK creatives fatigued without new LASIK content to replace them. After the LASIK ads were edited on 22 Oct, cost per message is already coming down. Presbyond and Cataract held up and got cheaper per message.</p>
+  <div class="kpi-grid"><div class="kpi"><div class="label">Total Ad Spend</div><div class="value">36,214<span class="unit">AED</span></div><div class="change flat">▼ 2% vs Sep (full-month pace)</div></div><div class="kpi"><div class="label">Paid Leads &amp; Messages</div><div class="value">1,481</div><div class="change down">▼ 17% vs Sep (full-month pace)</div></div><div class="kpi"><div class="label">LASIK Meta Messages</div><div class="value">640</div><div class="change down">▼ 23% vs Sep (full-month pace)</div></div></div>
+  <h3 class="subheading">October Spend by Platform <span class="accent">— 1 to 29 Oct</span></h3>
+  <div class="platforms spend-chips"><span class="platform-chip"><span class="dot" style="background:#E1306C;"></span>Instagram <strong style="margin-left:4px">18,146 AED</strong></span><span class="platform-chip"><span class="dot" style="background:#1877F2;"></span>Facebook <strong style="margin-left:4px">8,431 AED</strong></span><span class="platform-chip"><span class="dot" style="background:#4285F4;"></span>Google Ads <strong style="margin-left:4px">8,441 AED</strong></span><span class="platform-chip"><span class="dot" style="background:#FFFC00;border:1px solid #ccc"></span>Snapchat <strong style="margin-left:4px">772 AED</strong></span><span class="platform-chip"><span class="dot" style="background:#000;"></span>TikTok <strong style="margin-left:4px">423 AED</strong></span></div>
+  <p class="note">Google conversions are under-tracked in October (see the Google section), so part of the drop in paid results is tracking rather than fewer leads. October runs 1–29 Oct. “Oct pace” scales it to a full 31-day month so it can be compared fairly with earlier months.</p>
+</section>
+</div>
+
+<div class="page"><div class="section-divider"><div class="eyebrow">Part 01</div><h2>The <strong>Comparison</strong></h2></div></div>
+
+<div class="page">
+<section class="section" id="overview">
+  <h2 class="heading">Spend &amp; Results by Platform</h2>
+  <h3 class="subheading">Spend <span class="accent">— AED</span></h3>
+  <div class="tw"><table class="data"><thead><tr><th>Platform</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct 1–29</th><th class="yh">Oct pace</th><th>vs Sep</th><th>vs Jul</th></tr></thead><tbody><tr><td>Meta — Messaging</td><td class="num">27,457</td><td class="num">27,207</td><td class="num">28,206</td><td class="num">21,986</td><td class="num yc">23,503</td><td class="num" style="color:var(--ink);font-weight:700">▼ 17%</td><td class="num" style="color:var(--ink);font-weight:700">▼ 14%</td></tr><tr><td>Meta — Engagement</td><td class="num">4,771</td><td class="num">2,668</td><td class="num">675</td><td class="num">4,591</td><td class="num yc">4,907</td><td class="num" style="color:var(--ink);font-weight:700">▲ 627%</td><td class="num" style="color:var(--ink-muted);font-weight:700">▲ 3%</td></tr><tr><td>Google Ads<br><span class="note">LASIK only</span></td><td class="num">6,048</td><td class="num">6,913</td><td class="num">9,396</td><td class="num">8,441</td><td class="num yc">9,024</td><td class="num" style="color:var(--ink);font-weight:700">▼ 4%</td><td class="num" style="color:var(--ink);font-weight:700">▲ 49%</td></tr><tr><td>TikTok<br><span class="note">Brand awareness</span></td><td class="num">954</td><td class="num">1,050</td><td class="num">1,421</td><td class="num">423</td><td class="num yc">452</td><td class="num" style="color:var(--ink);font-weight:700">▼ 68%</td><td class="num" style="color:var(--ink);font-weight:700">▼ 53%</td></tr><tr><td>Snapchat</td><td class="num">–</td><td class="num">–</td><td class="num">–</td><td class="num">772</td><td class="num yc">825</td><td class="num">New</td><td class="num">New</td></tr><tr class="total"><td>Total Spend (AED)</td><td class="num">39,229</td><td class="num">37,838</td><td class="num">39,698</td><td class="num">36,214</td><td class="num yc">38,711</td><td class="num" style="color:#fff !important;color:var(--ink-muted);font-weight:700">▼ 2%</td><td class="num" style="color:#fff !important;color:var(--ink-muted);font-weight:700">▼ 1%</td></tr></tbody></table></div>
+  <h3 class="subheading">Paid Media Results <span class="accent">— messages, conversions &amp; leads</span></h3>
+  <div class="tw"><table class="data"><thead><tr><th>Source</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct 1–29</th><th class="yh">Oct pace</th><th>vs Sep</th><th>vs Jul</th></tr></thead><tbody><tr><td>Meta — Messages</td><td class="num">2,122</td><td class="num">1,851</td><td class="num">1,762</td><td class="num">1,413</td><td class="num yc">1,510</td><td class="num" style="color:var(--bad);font-weight:700">▼ 14%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 29%</td></tr><tr><td>Google — Conversions<br><span class="note">As tracked</span></td><td class="num">157</td><td class="num">124</td><td class="num">136</td><td class="num">58</td><td class="num yc">62</td><td class="num" style="color:var(--bad);font-weight:700">▼ 54%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 61%</td></tr><tr><td>Snapchat — Leads</td><td class="num">–</td><td class="num">–</td><td class="num">–</td><td class="num">10</td><td class="num yc">11</td><td class="num">New</td><td class="num">New</td></tr><tr class="total"><td>Total (as tracked)</td><td class="num">2,279</td><td class="num">1,975</td><td class="num">1,898</td><td class="num">1,481</td><td class="num yc">1,583</td><td class="num" style="color:#fff !important;color:var(--bad);font-weight:700">▼ 17%</td><td class="num" style="color:#fff !important;color:var(--bad);font-weight:700">▼ 31%</td></tr></tbody></table></div>
+</section>
+</div>
+
+<div class="page"><div class="section-divider"><div class="eyebrow">Part 02</div><h2>Channel <strong>Deep Dives</strong></h2></div></div>
+
+<div class="page">
+<section class="section" id="meta">
+<div class="channel-card">
+  <div class="channel-header meta"><div class="icon-box" style="color:#1877F2">M</div><span>Meta — Instagram &amp; Facebook</span><span class="badge paused" style="margin-left:auto">LASIK down</span></div>
+  <div class="channel-body">
+    <div class="quickstat-grid">
+      <div class="quickstat"><div class="lbl">Messaging Spend</div><div class="val">21,986<span style="font-size:14px;color:var(--ink-muted)">AED</span></div><div class="sub-lbl down">▼ 17% vs Sep</div></div>
+      <div class="quickstat"><div class="lbl">Messages</div><div class="val">1,413</div><div class="sub-lbl down">▼ 14% vs Sep</div></div>
+      <div class="quickstat"><div class="lbl">Cost / Message</div><div class="val">15.56<span style="font-size:14px;color:var(--ink-muted)">AED</span></div><div class="sub-lbl up">▼ 3% vs Sep</div></div>
+      <div class="quickstat"><div class="lbl">Engagement Spend</div><div class="val">4,591<span style="font-size:14px;color:var(--ink-muted)">AED</span></div><div class="sub-lbl ">▲ from 675 AED in Sep</div></div>
+    </div>
+
+    <h3 class="subheading">By Service <span class="accent">— messaging campaigns</span></h3>
+    <div class="tw"><table class="data"><thead><tr><th>Messages</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct 1–29</th><th class="yh">Oct pace</th><th>vs Sep</th><th>vs Jul</th></tr></thead><tbody><tr><td>LASIK MSG</td><td class="num">1,087</td><td class="num">957</td><td class="num">886</td><td class="num">640</td><td class="num yc">684</td><td class="num" style="color:var(--bad);font-weight:700">▼ 23%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 37%</td></tr><tr><td>Presbyond MSG</td><td class="num">909</td><td class="num">796</td><td class="num">744</td><td class="num">667</td><td class="num yc">713</td><td class="num" style="color:var(--bad);font-weight:700">▼ 4%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 22%</td></tr><tr><td>Cataract MSG</td><td class="num">126</td><td class="num">98</td><td class="num">132</td><td class="num">106</td><td class="num yc">113</td><td class="num" style="color:var(--bad);font-weight:700">▼ 14%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 10%</td></tr></tbody></table></div><div class="tw"><table class="data"><thead><tr><th>Spend (AED)</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct 1–29</th><th class="yh">Oct pace</th><th>vs Sep</th><th>vs Jul</th></tr></thead><tbody><tr><td>LASIK MSG</td><td class="num">12,563</td><td class="num">12,500</td><td class="num">13,914</td><td class="num">10,849</td><td class="num yc">11,597</td><td class="num" style="color:var(--ink);font-weight:700">▼ 17%</td><td class="num" style="color:var(--ink);font-weight:700">▼ 8%</td></tr><tr><td>Presbyond MSG</td><td class="num">12,972</td><td class="num">12,718</td><td class="num">11,337</td><td class="num">9,191</td><td class="num yc">9,825</td><td class="num" style="color:var(--ink);font-weight:700">▼ 13%</td><td class="num" style="color:var(--ink);font-weight:700">▼ 24%</td></tr><tr><td>Cataract MSG</td><td class="num">1,922</td><td class="num">1,988</td><td class="num">2,954</td><td class="num">1,946</td><td class="num yc">2,080</td><td class="num" style="color:var(--ink);font-weight:700">▼ 30%</td><td class="num" style="color:var(--ink);font-weight:700">▲ 8%</td></tr></tbody></table></div><div class="tw"><table class="data"><thead><tr><th>Cost / Message</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct 1–29</th><th class="yh">Oct pace</th><th>vs Sep</th><th>vs Jul</th></tr></thead><tbody><tr><td>LASIK</td><td class="num">11.56</td><td class="num">13.06</td><td class="num">15.70</td><td class="num">16.95</td><td class="num yc">–</td><td class="num" style="color:var(--bad);font-weight:700">▲ 8%</td><td class="num" style="color:var(--bad);font-weight:700">▲ 47%</td></tr><tr><td>Presbyond</td><td class="num">14.27</td><td class="num">15.98</td><td class="num">15.24</td><td class="num">13.78</td><td class="num yc">–</td><td class="num" style="color:var(--good);font-weight:700">▼ 10%</td><td class="num" style="color:var(--good);font-weight:700">▼ 3%</td></tr><tr><td>Cataract</td><td class="num">15.25</td><td class="num">20.29</td><td class="num">22.38</td><td class="num">18.36</td><td class="num yc">–</td><td class="num" style="color:var(--good);font-weight:700">▼ 18%</td><td class="num" style="color:var(--bad);font-weight:700">▲ 20%</td></tr></tbody></table></div>
+    
+    <div class="insight-box bad"><div class="ib-label">Why LASIK dropped</div>
+    <p><strong>Facebook budget reduced after clinic feedback.</strong> The clinic reported few bookings from Facebook leads, so the LASIK Facebook budget was cut. Spend roughly halved (5,185 to 2,449 AED) and Facebook LASIK messages fell from 364 to 206, which accounts for most of the LASIK drop. On the ad side, Facebook is LASIK’s cheapest platform, at 11.89 AED per message against 19.35 on Instagram. Booking quality cannot be confirmed from ad data alone; with the clinic’s bookings by source, we can compare cost per booking on Facebook and Instagram and set the budget split on that basis.</p>
+    <p><strong>Higher cost from creative fatigue.</strong> LASIK cost per message has risen every month since July: 11.56, 13.06, 15.70 and now 16.95 AED. The rise sits in the two LASIK ads that carry most of the budget: <a class="adlink" href="https://www.instagram.com/p/DXG0eIiAFE-/#advertiser" target="_blank" rel="noopener">“Apr 12, 2026”</a> went from 12.01 AED per message in July to 21.55 in October and <a class="adlink" href="https://www.instagram.com/p/Dar6aTnActy/#advertiser" target="_blank" rel="noopener">“Jul 9, 2026”</a> from 12.18 to 17.46. These ads have been running for months, and there has been no new LASIK content in the same style to replace them: short, direct videos with the doctor, or clear, straightforward videos with patients who have had LASIK. That kind of content has driven LASIK’s best results so far.</p></div>
+    <div class="insight-box good"><div class="ib-label">LASIK after the 22 Oct edit</div>
+    <p>When the client first reported lower leads, we edited the LASIK ads on 22 Oct and refreshed the audiences. In the week after, cost per message fell by 11% and messages per day rose at a similar daily spend. Instagram improved most. New LASIK creatives should take this further.</p>
+    <div class="tw"><table class="data"><thead><tr><th>LASIK Meta</th><th>15–21 Oct</th><th class="yh">22–29 Oct</th><th>Change</th></tr></thead><tbody>
+    <tr><td>Spend (AED)</td><td class="num">2,755.35</td><td class="num yc">3,118.66</td><td class="num">8 days vs 7</td></tr>
+    <tr><td>Messages</td><td class="num">148</td><td class="num yc">188</td><td class="num" style="color:var(--good);font-weight:700">▲ 11% per day</td></tr>
+    <tr><td>Cost / Message</td><td class="num">18.62</td><td class="num yc">16.59</td><td class="num" style="color:var(--good);font-weight:700">▼ 11%</td></tr>
+    <tr><td>Instagram Cost / Message</td><td class="num">22.06</td><td class="num yc">18.74</td><td class="num" style="color:var(--good);font-weight:700">▼ 15%</td></tr>
+    <tr><td>Facebook Cost / Message</td><td class="num">11.66</td><td class="num yc">11.38</td><td class="num" style="color:var(--ink-muted);font-weight:700">▼ 2%</td></tr>
+    </tbody></table></div></div>
+    <div class="insight-box good"><div class="ib-label">Presbyond &amp; Cataract held up</div>
+    <p>Presbyond messages are almost flat on a lower budget, at 13.78 AED per message (from 15.24). Against September, Cataract messages dipped because of a lower budget, while its cost per message improved from 22.38 to 18.36 AED. It is still above July’s 15.25 AED.</p></div>
+
+    <h3 class="subheading">Where the Budget Went <span class="accent">— messaging vs engagement</span></h3>
+    <div class="tw"><table class="data"><thead><tr><th>Objective</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct 1–29</th><th class="yh">Oct pace</th><th>vs Sep</th><th>vs Jul</th></tr></thead><tbody><tr><td>Messaging campaigns</td><td class="num">27,457</td><td class="num">27,207</td><td class="num">28,206</td><td class="num">21,986</td><td class="num yc">23,503</td><td class="num" style="color:var(--ink);font-weight:700">▼ 17%</td><td class="num" style="color:var(--ink);font-weight:700">▼ 14%</td></tr><tr><td>Engagement campaigns</td><td class="num">4,771</td><td class="num">2,668</td><td class="num">675</td><td class="num">4,591</td><td class="num yc">4,907</td><td class="num" style="color:var(--ink);font-weight:700">▲ 627%</td><td class="num" style="color:var(--ink-muted);font-weight:700">▲ 3%</td></tr></tbody></table></div>
+    <p class="note">Engagement spend went back up to around July’s level (4,771 AED in July) after a low September, about 4,232 AED more than September on a full-month basis (LASIK 2,376 AED, Presbyond 2,214 AED in Oct 1–29). Engagement builds reach and video views but does not bring messages. At September’s cost per message, October’s messaging spend would have produced about 1,468 messages; the actual pace is 1,510, so lower messaging spend explains the full Meta drop.</p>
+
+    <h3 class="subheading">Facebook vs Instagram <span class="accent">— messaging campaigns</span></h3>
+    <div class="tw"><table class="data"><thead><tr><th>Messaging Spend (AED)</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct 1–29</th><th class="yh">Oct pace</th><th>vs Sep</th><th>vs Jul</th></tr></thead><tbody><tr><td>Facebook</td><td class="num">7,988</td><td class="num">8,001</td><td class="num">9,979</td><td class="num">8,431</td><td class="num yc">9,013</td><td class="num" style="color:var(--ink);font-weight:700">▼ 10%</td><td class="num" style="color:var(--ink);font-weight:700">▲ 13%</td></tr><tr><td>Instagram</td><td class="num">19,469</td><td class="num">19,205</td><td class="num">18,227</td><td class="num">13,555</td><td class="num yc">14,490</td><td class="num" style="color:var(--ink);font-weight:700">▼ 21%</td><td class="num" style="color:var(--ink);font-weight:700">▼ 26%</td></tr></tbody></table><table class="data"><thead><tr><th>Messages</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct 1–29</th><th class="yh">Oct pace</th><th>vs Sep</th><th>vs Jul</th></tr></thead><tbody><tr><td>Facebook</td><td class="num">739</td><td class="num">646</td><td class="num">670</td><td class="num">633</td><td class="num yc">677</td><td class="num" style="color:var(--ink-muted);font-weight:700">▲ 1%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 8%</td></tr><tr><td>Instagram</td><td class="num">1,383</td><td class="num">1,205</td><td class="num">1,092</td><td class="num">780</td><td class="num yc">834</td><td class="num" style="color:var(--bad);font-weight:700">▼ 24%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 40%</td></tr></tbody></table><table class="data"><thead><tr><th>Cost / Message</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct 1–29</th><th class="yh">Oct pace</th><th>vs Sep</th><th>vs Jul</th></tr></thead><tbody><tr><td>Facebook</td><td class="num">10.81</td><td class="num">12.39</td><td class="num">14.89</td><td class="num">13.32</td><td class="num yc">–</td><td class="num" style="color:var(--good);font-weight:700">▼ 11%</td><td class="num" style="color:var(--bad);font-weight:700">▲ 23%</td></tr><tr><td>Instagram</td><td class="num">14.08</td><td class="num">15.94</td><td class="num">16.69</td><td class="num">17.38</td><td class="num yc">–</td><td class="num" style="color:var(--bad);font-weight:700">▲ 4%</td><td class="num" style="color:var(--bad);font-weight:700">▲ 23%</td></tr></tbody></table></div>
+    <h3 class="subheading">Cost per Message by Service &amp; Platform</h3>
+    <div class="tw"><table class="data"><thead><tr><th>Service</th><th>FB Sep</th><th class="yh">FB Oct</th><th>IG Sep</th><th class="yh">IG Oct</th></tr></thead><tbody><tr><td>LASIK</td><td class="num">14.24</td><td class="num" style="color:var(--good);font-weight:700">11.89</td><td class="num">16.72</td><td class="num" style="color:var(--bad);font-weight:700">19.35</td></tr><tr><td>Presbyond</td><td class="num">15.62</td><td class="num" style="color:var(--good);font-weight:700">13.47</td><td class="num">15.06</td><td class="num" style="color:var(--good);font-weight:700">14.17</td></tr><tr><td>Cataract</td><td class="num">15.86</td><td class="num" style="color:var(--bad);font-weight:700">17.66</td><td class="num">28.90</td><td class="num" style="color:var(--good);font-weight:700">19.12</td></tr></tbody></table></div>
+    <p class="note">Instagram is the more expensive platform, and LASIK on Instagram rose from 16.72 to 19.35 AED per message as its main ads fatigued. On Facebook every service except Cataract got cheaper; LASIK volume there fell because its budget was reduced.</p>
+
+
+    <h3 class="subheading">Creative Insights</h3>
+        <div class="insight-box warn"><div class="ib-label">LASIK creatives need refreshing</div>
+    <p><a class="adlink" href="https://www.instagram.com/p/DXG0eIiAFE-/#advertiser" target="_blank" rel="noopener">“Apr 12, 2026”</a> has been the main LASIK ad since July. Its cost per message has risen from 12.01 AED in July to 21.55 AED in October and its CTR has dropped to 0.41%. <a class="adlink" href="https://www.instagram.com/p/Dar6aTnActy/#advertiser" target="_blank" rel="noopener">“Jul 9, 2026”</a> is following the same pattern. <a class="adlink" href="https://www.instagram.com/p/DaxfcE6AdJo/#advertiser" target="_blank" rel="noopener">“Lasik offer - Copy”</a> brought 219 messages in August and was off in October, and the new LASIK creatives in October ran in engagement campaigns only.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="google">
+<div class="channel-card">
+  <div class="channel-header ga"><div class="icon-box" style="color:var(--ink)">G</div><span>Google Ads — LASIK</span><span class="badge brand" style="margin-left:auto">Tracking gap</span></div>
+  <div class="channel-body">
+    <div class="quickstat-grid">
+      <div class="quickstat"><div class="lbl">Spend</div><div class="val">8,441<span style="font-size:14px;color:var(--ink-muted)">AED</span></div><div class="sub-lbl ">▼ 4% vs Sep</div></div>
+      <div class="quickstat"><div class="lbl">Clicks</div><div class="val">1,055</div><div class="sub-lbl down">▼ 19% vs Sep</div></div>
+      <div class="quickstat"><div class="lbl">Avg. CPC</div><div class="val">8.00<span style="font-size:14px;color:var(--ink-muted)">AED</span></div><div class="sub-lbl down">▲ 19% vs Sep</div></div>
+      <div class="quickstat"><div class="lbl">Conversions</div><div class="val">58</div><div class="sub-lbl down">▼ 54% vs Sep (tracking)</div></div>
+    </div>
+    <div class="tw"><table class="data"><thead><tr><th>Metric</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct 1–29</th><th class="yh">Oct pace</th><th>vs Sep</th><th>vs Jul</th></tr></thead><tbody><tr><td>Spend (AED)</td><td class="num">6,048</td><td class="num">6,913</td><td class="num">9,396</td><td class="num">8,441</td><td class="num yc">9,024</td><td class="num" style="color:var(--ink);font-weight:700">▼ 4%</td><td class="num" style="color:var(--ink);font-weight:700">▲ 49%</td></tr><tr><td>Impressions</td><td class="num">29,227</td><td class="num">29,941</td><td class="num">37,926</td><td class="num">25,972</td><td class="num yc">27,763</td><td class="num" style="color:var(--bad);font-weight:700">▼ 27%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 5%</td></tr><tr><td>Clicks</td><td class="num">1,223</td><td class="num">1,190</td><td class="num">1,392</td><td class="num">1,055</td><td class="num yc">1,128</td><td class="num" style="color:var(--bad);font-weight:700">▼ 19%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 8%</td></tr><tr><td>Avg. CPC (AED)</td><td class="num">4.94</td><td class="num">5.81</td><td class="num">6.75</td><td class="num">8.00</td><td class="num yc">–</td><td class="num" style="color:var(--bad);font-weight:700">▲ 19%</td><td class="num" style="color:var(--bad);font-weight:700">▲ 62%</td></tr></tbody></table></div>
+    <h3 class="subheading">Conversions by Action</h3>
+    <div class="tw"><table class="data"><thead><tr><th>Conversion</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct 1–29</th><th class="yh">Oct pace</th><th>vs Sep</th><th>vs Jul</th></tr></thead><tbody><tr><td>WhatsApp</td><td class="num">92</td><td class="num">94</td><td class="num">99</td><td class="num">40</td><td class="num yc">43</td><td class="num" style="color:var(--bad);font-weight:700">▼ 57%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 54%</td></tr><tr><td>Calls<br><span class="note">Footer call button (removed from landing page)</span></td><td class="num">49</td><td class="num">23</td><td class="num">28</td><td class="num">10</td><td class="num yc">11</td><td class="num" style="color:var(--bad);font-weight:700">▼ 62%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 78%</td></tr><tr><td>Form</td><td class="num">16</td><td class="num">7</td><td class="num">9</td><td class="num">8</td><td class="num yc">9</td><td class="num" style="color:var(--bad);font-weight:700">▼ 5%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 47%</td></tr><tr class="total"><td>Total Conversions</td><td class="num">157</td><td class="num">124</td><td class="num">136</td><td class="num">58</td><td class="num yc">62</td><td class="num" style="color:#fff !important;color:var(--bad);font-weight:700">▼ 54%</td><td class="num" style="color:#fff !important;color:var(--bad);font-weight:700">▼ 61%</td></tr><tr><td>WhatsApp per 100 clicks</td><td class="num">7.5</td><td class="num">7.9</td><td class="num">7.1</td><td class="num">3.8</td><td class="num yc">–</td><td class="num" style="color:var(--bad);font-weight:700">▼ 47%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 50%</td></tr></tbody></table></div>
+    <h3 class="subheading">By Campaign <span class="accent">— Sep vs Oct 1–29</span></h3>
+    <div class="tw"><table class="data"><thead><tr><th>Campaign</th><th>Spend Sep</th><th class="yh">Spend Oct</th><th>Clicks Sep</th><th class="yh">Clicks Oct</th><th>CPC Sep</th><th class="yh">CPC Oct</th><th>WA Sep</th><th class="yh">WA Oct</th></tr></thead><tbody><tr><td>English-keyword campaign</td><td class="num">5,775.05</td><td class="num">5,462.56</td><td class="num">865</td><td class="num">691</td><td class="num">6.68</td><td class="num" style="color:var(--bad);font-weight:700">7.91</td><td class="num">64</td><td class="num" style="color:var(--bad);font-weight:700">29</td></tr><tr><td>Arabic-keyword campaign</td><td class="num">3,030.71</td><td class="num">2,852.34</td><td class="num">393</td><td class="num">331</td><td class="num">7.71</td><td class="num" style="color:var(--bad);font-weight:700">8.62</td><td class="num">25</td><td class="num" style="color:var(--bad);font-weight:700">10</td></tr><tr><td>English-keyword campaign (Target CPA)</td><td class="num">565.05</td><td class="num">126.49</td><td class="num">125</td><td class="num">33</td><td class="num">4.52</td><td class="num" style="color:var(--good);font-weight:700">3.83</td><td class="num">10</td><td class="num" style="color:var(--bad);font-weight:700">1</td></tr></tbody></table></div>
+    <div class="insight-box warn"><div class="ib-label">Costs and landing page on Google</div>
+    <p><strong>Real drop:</strong> cost per click has risen every month since July (4.94, 5.81, 6.75 and now 8.00 AED). Against September it rose in both the English-keyword and Arabic-keyword campaigns, so a similar budget bought 19% fewer clicks. The English-keyword Target CPA campaign also almost stopped serving (125 to 33 clicks).</p>
+    <p><strong>Landing page change:</strong> when the landing page was updated, the call button was removed and a floating WhatsApp button was added, and the floating button is not tracked. Tracked WhatsApp conversions fell 57%, much more than clicks and in every campaign at once, which points to contacts going through the untracked floating button. Calls fell because the landing page no longer has a call button; the calls still counted come from visitors who move to other pages of the website and use the call button in the footer. Form conversions are stable. At September’s conversion rate, Google would show about 110 conversions for October instead of 62 on a full-month basis.</p></div>
+      </div>
+</div>
+</section>
+
+<section class="section" id="snapchat">
+<div class="channel-card">
+  <div class="channel-header sc"><div class="icon-box" style="background:var(--black);color:var(--sc)">S</div><span>Snapchat — LASIK Lead Form</span><span class="badge new" style="margin-left:auto">Launched Oct</span></div>
+  <div class="channel-body">
+    <div class="quickstat-grid">
+      <div class="quickstat"><div class="lbl">Spend</div><div class="val">772<span style="font-size:14px;color:var(--ink-muted)">AED</span></div></div><div class="quickstat"><div class="lbl">Leads</div><div class="val">10</div></div><div class="quickstat"><div class="lbl">Cost / Lead</div><div class="val">77.22<span style="font-size:14px;color:var(--ink-muted)">AED</span></div></div><div class="quickstat"><div class="lbl">Clicks</div><div class="val">303</div></div>
+    </div>
+    <p class="note">Snapchat started in October with a LASIK lead form. Ten leads is too few to affect the comparison; targeting, creatives and the lead form are still being tested to lower the cost per lead.</p>
+  </div>
+</div>
+</section>
+
+<section class="section" id="tiktok">
+<div class="channel-card">
+  <div class="channel-header tt"><div class="icon-box" style="color:var(--tt)">♪</div><span>TikTok</span><span class="badge brand" style="margin-left:auto">Brand Awareness</span></div>
+  <div class="channel-body">
+    <div class="tw"><table class="data"><thead><tr><th>Metric</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct 1–29</th><th class="yh">Oct pace</th><th>vs Sep</th><th>vs Jul</th></tr></thead><tbody><tr><td>Spend (AED)</td><td class="num">954</td><td class="num">1,050</td><td class="num">1,421</td><td class="num">423</td><td class="num yc">452</td><td class="num" style="color:var(--ink);font-weight:700">▼ 68%</td><td class="num" style="color:var(--ink);font-weight:700">▼ 53%</td></tr><tr><td>Video Views</td><td class="num">284,433</td><td class="num">511,657</td><td class="num">515,410</td><td class="num">112,225</td><td class="num yc">119,965</td><td class="num" style="color:var(--bad);font-weight:700">▼ 77%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 58%</td></tr><tr><td>Paid Follows</td><td class="num">540</td><td class="num">740</td><td class="num">644</td><td class="num">117</td><td class="num yc">125</td><td class="num" style="color:var(--bad);font-weight:700">▼ 81%</td><td class="num" style="color:var(--bad);font-weight:700">▼ 77%</td></tr></tbody></table></div>
+    <p class="note">TikTok is a brand awareness channel and is not measured on leads. Its spend was reduced in October, roughly matching the new Snapchat budget.</p>
+  </div>
+</div>
+</section>
+</div>
+
+<div class="page"><div class="section-divider"><div class="eyebrow">Part 03</div><h2>Clinic <strong>Bookings</strong></h2></div></div>
+
+<div class="page">
+<section class="section" id="crm">
+  <h2 class="heading">Free Laser Consultations &amp; Surgeries</h2>
+  <p class="note">From the clinic’s AnglePro report. Shown separately from Paid Media because the two systems do not reconcile, and bookings cover all sources, not only paid ads.</p>
+  <div class="tw"><table class="data"><thead><tr><th>Month</th><th>FLC Booked</th><th>Attended</th><th>Show Rate</th><th>Laser Surgeries</th></tr></thead><tbody><tr><td>Jul</td><td class="num">336</td><td class="num">173</td><td class="num">51%</td><td class="num">46</td></tr><tr><td>Aug</td><td class="num">302</td><td class="num">167</td><td class="num">55%</td><td class="num">46</td></tr><tr><td>Sep</td><td class="num">299</td><td class="num">163</td><td class="num">55%</td><td class="num">35</td></tr><tr><td>Oct 1–29</td><td class="num">249</td><td class="num">128</td><td class="num">51%</td><td class="num">38</td></tr><tr><td>Oct pace</td><td class="num yc">266</td><td class="num yc">137</td><td class="num yc">51%</td><td class="num yc">41</td></tr></tbody></table></div>
+  <ul class="bullets">
+    <li><strong>Bookings</strong> are pacing about 11% below September and have declined each month since July’s 336, in line with the paid media trend.</li>
+    <li><strong>Show rate</strong> fell to 46% from 12 Oct, against 60% in 1–11 Oct. This is attendance, not lead volume.</li>
+    <li><strong>Laser surgeries</strong> reached 38 by 29 Oct, already above September’s 35.</li>
+  </ul>
+</section>
+</div>
+
+<div class="page"><div class="section-divider"><div class="eyebrow">Part 04</div><h2>Notes &amp; <strong>Insights</strong></h2></div></div>
+
+<div class="page">
+<section class="section" id="notes">
+  <h2 class="heading">Overall Highlights</h2>
+  <div class="two-col">
+    <div>
+      <h3 class="subheading" style="color:var(--good)">Key Wins</h3>
+      <div class="insight-box good"><div class="ib-label">Presbyond more efficient</div><p>Cost per message fell from 15.24 to 13.78 AED, with messages almost flat on a lower budget.</p></div>
+      <div class="insight-box good"><div class="ib-label">New top ad</div><p><a class="adlink" href="https://www.facebook.com/61570842910364/posts/873013365494460/" target="_blank" rel="noopener">“en Jan 11, 2026”</a> (Presbyond) was October’s top ad: 227 messages at 7.86 AED each.</p></div>
+      <div class="insight-box good"><div class="ib-label">LASIK improving after 22 Oct</div><p>After the LASIK ad edit and audience refresh, cost per message fell from 18.62 to 16.59 AED in one week.</p></div>
+      <div class="insight-box good"><div class="ib-label">Cataract cheaper</div><p>Cost per message fell from 22.38 to 18.36 AED.</p></div>
+      <div class="insight-box good"><div class="ib-label">Facebook held volume</div><p>Facebook messages stayed level with September at a lower cost per message.</p></div>
+    </div>
+    <div>
+      <h3 class="subheading" style="color:var(--warn)">Watch-outs</h3>
+      <div class="insight-box warn"><div class="ib-label">LASIK messages down</div><p>LASIK Meta messages fell 23% vs September on a full-month basis, continuing a decline since July.</p></div>
+      <div class="insight-box warn"><div class="ib-label">LASIK Facebook budget</div><p>LASIK’s Facebook budget roughly halved after the clinic reported few bookings from Facebook, although Facebook is LASIK’s cheapest platform. Bookings by source are needed to confirm.</p></div>
+      <div class="insight-box warn"><div class="ib-label">LASIK creative fatigue</div><p>The main LASIK ads are getting more expensive, with no new LASIK content to replace them.</p></div>
+      <div class="insight-box warn"><div class="ib-label">Google costs &amp; tracking</div><p>Cost per click is up 19% vs September and 62% vs July. After the landing page update the call button was removed and the new floating WhatsApp button is not tracked.</p></div>
+    </div>
+  </div>
+
+  <h2 class="heading" style="margin-top:40px">Next Steps</h2>
+  <ul class="bullets">
+    <li>Share LASIK bookings by source so we can compare cost per booking on Facebook and Instagram and set the budget split.</li>
+    <li>Get new LASIK content in the style that performs best: short, direct doctor videos and clear patient videos.</li>
+    <li>Add tracking to the floating WhatsApp button on the landing page.</li>
+    <li>Add the call button back to the landing page, with call tracking.</li>
+    <li>Keep testing Snapchat targeting, creatives and lead form before adding budget.</li>
+  </ul>
+</section>
+</div>
+
+<footer class="doc-footer">
+  <div class="by">Prepared by</div>
+  <div class="agency-mark">APPSTAIRS</div>
+  <div class="meta">Lasik Plus · Performance Comparison · 01.07.2026 — 29.10.2026</div>
+</footer>
+</body></html>
